@@ -1,0 +1,21 @@
+<h2>tester to understand more</h2>
+
+<blockquote>
+  <p>
+    <cite>Your reply:
+    </cite>
+    <% if @question.blank? %>
+      😶
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer %></p>
+  <cite>Your coach</cite>
+</blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
